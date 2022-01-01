@@ -1,24 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useRef, useState } from "react";
+import Main from "./components/Main";
+import styles from "./App.module.css";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import Projects from "./components/Projects";
+import ScrollUp from "./components/ScrollUp";
 
 function App() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const topRef = useRef(null);
+  const bottomRef = useRef(null);
+
+  const listenToScroll = () => {
+    const winScroll =
+      document.body.scrollTop || document.documentElement.scrollTop;
+
+    const height =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+
+    const scrolled = winScroll / height;
+
+    setScrollPosition(scrolled);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", listenToScroll);
+    return () => window.removeEventListener("scroll", listenToScroll);
+  }, []);
+
+  const scrollToBottom = () => {
+    bottomRef.current.scrollIntoView({ block: "end", behavior: "smooth" });
+  };
+  const scrollToTop = () => {
+    topRef.current.scrollIntoView({ block: "end", behavior: "smooth" });
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div ref={topRef} />
+      <Main />
+      <div onClick={scrollToBottom} className={styles.arrowDown}>
+        <KeyboardArrowDownIcon fontSize="inherit" />
+      </div>
+      <Projects />
+      <div ref={bottomRef} />
+      {scrollPosition && <ScrollUp scrollToTop={scrollToTop} />}
+    </>
   );
 }
 

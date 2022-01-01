@@ -1,0 +1,18 @@
+.arrowDown {
+  color: white;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  height: 10vh;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.arrowDown:hover {
+  background-color: rgba(255, 255, 255, 0.07);
+  transition: 0.2s;
+}

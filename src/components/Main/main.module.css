@@ -1,0 +1,163 @@
+.container {
+  color: white;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 0.65rem;
+  text-align: center;
+  width: 100%;
+  font-size: 3rem;
+  line-height: 1.175;
+  font-weight: 900;
+  animation: fadeIn1 1s ease;
+}
+
+.description {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  letter-spacing: 0.05rem;
+  font-size: 1.15rem;
+  line-height: 1.675;
+  font-weight: 100;
+  margin: 1rem 0 2rem 0;
+  animation: fadeIn2 1.2s ease;
+}
+
+hr {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 10rem;
+  animation: fadeIn3 1s ease;
+}
+
+.socialList {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+  animation: slideInLeft 1s ease;
+}
+
+.socialListItem {
+  list-style: none;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialListItem:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.socialListItem a {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialListItem:nth-child(1) a {
+  border: 1px solid #61ebff;
+  color: #61ebff;
+}
+
+.socialListItem:nth-child(2) a {
+  border: 1px solid #ff6161;
+  color: #ff6161;
+}
+
+.socialListItem:nth-child(3) a {
+  border: 1px solid #ddff61;
+  color: #ddff61;
+}
+
+.socialListItem:nth-child(4) a {
+  border: 1px solid #61ff61;
+  color: #61ff61;
+}
+@keyframes fadeIn1 {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn2 {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn3 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .name {
+    font-size: 2.3rem;
+  }
+  .description {
+    font-size: 0.9rem;
+  }
+  .socialListItem {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+@media (max-width: 530px) {
+  .name {
+    font-size: 1.9rem;
+  }
+  .description {
+    font-size: 0.8rem;
+  }
+  .socialListItem {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 450px) {
+  .name {
+    letter-spacing: 0.2rem;
+  }
+}

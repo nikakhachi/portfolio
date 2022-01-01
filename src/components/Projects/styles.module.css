@@ -1,0 +1,14 @@
+.container {
+  height: 100vh;
+  color: white;
+  position: relative;
+}
+
+.footer {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5vh;
+  padding: 0.5%;
+}
