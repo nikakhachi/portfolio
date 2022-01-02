@@ -37,10 +37,8 @@ function App() {
     topRef.current.scrollIntoView({ block: "end", behavior: "smooth" });
   };
   const scrollToMid = () => {
-    midRef.current.scrollIntoView({ block: "end", behavior: "smooth" });
+    midRef.current.scrollIntoView({ block: "start", behavior: "smooth" });
   };
-
-  console.log(scrollPosition);
 
   return (
     <>
@@ -49,9 +47,9 @@ function App() {
       <Navigation
         scrollPosition={scrollPosition}
         scrolls={{ scrollToBottom, scrollToMid, scrollToTop }}
-      />
-      <Projects />
+      />{" "}
       <div ref={midRef} />
+      <Projects />
       <Contact />
       <div ref={bottomRef} />
       {scrollPosition && <ScrollUp scrollToTop={scrollToTop} />}

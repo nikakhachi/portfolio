@@ -26,7 +26,7 @@
   font-size: 1.15rem;
   line-height: 1.675;
   font-weight: 100;
-  margin: 1rem 0 2rem 0;
+  margin: 1rem 0 0.5rem 0;
   animation: fadeIn2 1.2s ease;
 }
 
@@ -34,6 +34,26 @@ hr {
   border: 1px solid rgba(255, 255, 255, 0.3);
   width: 10rem;
   animation: fadeIn3 1s ease;
+}
+
+.iconList {
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 2rem;
+  animation: fadeIn2 1.2s ease;
+}
+
+.iconList li {
+  font-size: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconList li p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 @keyframes fadeIn1 {
@@ -74,13 +94,27 @@ hr {
   .description {
     font-size: 0.9rem;
   }
+  .iconList li {
+    font-size: 2.1rem;
+  }
+  .iconList li p {
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 530px) {
   .name {
     font-size: 1.9rem;
+    width: 95%;
   }
   .description {
+    font-size: 0.8rem;
+    width: 95%;
+  }
+  .iconList li {
+    font-size: 2rem;
+  }
+  .iconList li p {
     font-size: 0.8rem;
   }
 }
