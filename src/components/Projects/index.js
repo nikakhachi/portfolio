@@ -21,6 +21,7 @@ const projects = [
       "ReactJS",
       "Force-Graph",
       "NodeJS",
+      "SocketIO",
       "Neo4j",
       "PostgreSQL",
       "S3",
@@ -36,7 +37,8 @@ const projects = [
   },
   {
     name: "B Bot",
-    description: "Number 1 insurance bot in Georgia",
+    description:
+      "Messenger bot operating on Botkit core. Serves as a number 1 insurance bot in Georgia.",
     image: bBotImage,
     technologies: ["NodeJS", "Botkit", "PostgreSQL"],
   },

@@ -47,7 +47,7 @@ function App() {
       <Navigation
         scrollPosition={scrollPosition}
         scrolls={{ scrollToBottom, scrollToMid, scrollToTop }}
-      />{" "}
+      />
       <div ref={midRef} />
       <Projects />
       <Contact />

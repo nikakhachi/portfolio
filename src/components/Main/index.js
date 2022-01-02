@@ -1,7 +1,7 @@
 import styles from "./main.module.css";
 import SocialList from "../socialLinks";
 import { DiReact, DiNodejsSmall } from "react-icons/di";
-import { SiTypescript, SiJavascript } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
 function Main() {
   return (
     <div className={styles.container}>
