@@ -1,15 +1,16 @@
 import { useEffect, useRef, useState } from "react";
 import Main from "./components/Main";
-import styles from "./App.module.css";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import Projects from "./components/Projects";
 import ScrollUp from "./components/ScrollUp";
+import Navigation from "./components/Navigation";
+import Contact from "./components/Contact";
 
 function App() {
   const [scrollPosition, setScrollPosition] = useState(0);
 
   const topRef = useRef(null);
   const bottomRef = useRef(null);
+  const midRef = useRef(null);
 
   const listenToScroll = () => {
     const winScroll =
@@ -35,15 +36,23 @@ function App() {
   const scrollToTop = () => {
     topRef.current.scrollIntoView({ block: "end", behavior: "smooth" });
   };
+  const scrollToMid = () => {
+    midRef.current.scrollIntoView({ block: "end", behavior: "smooth" });
+  };
+
+  console.log(scrollPosition);
 
   return (
     <>
       <div ref={topRef} />
       <Main />
-      <div onClick={scrollToBottom} className={styles.arrowDown}>
-        <KeyboardArrowDownIcon fontSize="inherit" />
-      </div>
+      <Navigation
+        scrollPosition={scrollPosition}
+        scrolls={{ scrollToBottom, scrollToMid, scrollToTop }}
+      />
       <Projects />
+      <div ref={midRef} />
+      <Contact />
       <div ref={bottomRef} />
       {scrollPosition && <ScrollUp scrollToTop={scrollToTop} />}
     </>

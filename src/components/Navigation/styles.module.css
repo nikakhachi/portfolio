@@ -1,0 +1,47 @@
+.arrowDown {
+  color: white;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  height: 10vh;
+  cursor: pointer;
+  transition: 0.2s;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.list li:hover {
+  background-color: rgba(255, 255, 255, 0.07);
+  transition: 0.2s;
+}
+
+.list {
+  display: flex;
+  height: 100%;
+}
+
+.list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.activeItem {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 600px) {
+  .arrowDown {
+    font-size: 1.2rem;
+  }
+  .list li {
+    padding: 1rem;
+  }
+}

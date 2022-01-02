@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 const Projects = () => {
   return (
     <div className={styles.container}>
-      <footer className={styles.footer}></footer>
+      {/* <h1 className={styles.title}></h1> */}
     </div>
   );
 };

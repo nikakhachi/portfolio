@@ -36,56 +36,6 @@ hr {
   animation: fadeIn3 1s ease;
 }
 
-.socialList {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-  margin-top: 2rem;
-  animation: slideInLeft 1s ease;
-}
-
-.socialListItem {
-  list-style: none;
-  width: 65px;
-  height: 65px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.socialListItem:hover {
-  transform: scale(1.1);
-  transition: 0.3s;
-}
-
-.socialListItem a {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.socialListItem:nth-child(1) a {
-  border: 1px solid #61ebff;
-  color: #61ebff;
-}
-
-.socialListItem:nth-child(2) a {
-  border: 1px solid #ff6161;
-  color: #ff6161;
-}
-
-.socialListItem:nth-child(3) a {
-  border: 1px solid #ddff61;
-  color: #ddff61;
-}
-
-.socialListItem:nth-child(4) a {
-  border: 1px solid #61ff61;
-  color: #61ff61;
-}
 @keyframes fadeIn1 {
   0% {
     transform: scale(0.9);
@@ -117,29 +67,12 @@ hr {
   }
 }
 
-@keyframes slideInLeft {
-  0% {
-    transform: translateX(-20%);
-    opacity: 0;
-  }
-  95% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
 @media (max-width: 900px) {
   .name {
     font-size: 2.3rem;
   }
   .description {
     font-size: 0.9rem;
-  }
-  .socialListItem {
-    width: 55px;
-    height: 55px;
   }
 }
 
@@ -149,10 +82,6 @@ hr {
   }
   .description {
     font-size: 0.8rem;
-  }
-  .socialListItem {
-    width: 50px;
-    height: 50px;
   }
 }
 
