@@ -5,23 +5,29 @@ const Navigation = ({ scrolls, scrollPosition }) => {
     <div className={styles.arrowDown}>
       <ul className={styles.list}>
         <li
-          className={scrollPosition <= 0.333 && styles.activeItem}
+          className={scrollPosition <= 0.16 && styles.activeItem}
           onClick={scrolls.scrollToTop}
         >
           Main Page
         </li>
         <li
           className={
-            scrollPosition < 0.666 &&
-            scrollPosition > 0.333 &&
-            styles.activeItem
+            scrollPosition < 0.62 && scrollPosition > 0.16 && styles.activeItem
           }
-          onClick={scrolls.scrollToMid}
+          onClick={scrolls.scrollToProjects}
         >
           Projects
         </li>
         <li
-          className={scrollPosition >= 0.666 && styles.activeItem}
+          className={
+            scrollPosition < 0.84 && scrollPosition > 0.62 && styles.activeItem
+          }
+          onClick={scrolls.scrollToTestimonials}
+        >
+          Testimonials
+        </li>
+        <li
+          className={scrollPosition >= 0.84 && styles.activeItem}
           onClick={scrolls.scrollToBottom}
         >
           Contact Me

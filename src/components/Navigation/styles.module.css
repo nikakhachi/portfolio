@@ -5,7 +5,7 @@
   padding: 0;
   justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   background-color: rgb(43, 43, 43);
   height: 10vh;
   cursor: pointer;
@@ -35,6 +35,12 @@
 
 .activeItem {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 900px) {
+  .list li {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 600px) {

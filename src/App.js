@@ -3,6 +3,7 @@ import Main from "./components/Main";
 import Projects from "./components/Projects";
 import ScrollUp from "./components/ScrollUp";
 import Navigation from "./components/Navigation";
+import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
 
   const topRef = useRef(null);
   const bottomRef = useRef(null);
-  const midRef = useRef(null);
+  const projectsRef = useRef(null);
+  const testimonialsRef = useRef(null);
 
   const listenToScroll = () => {
     const winScroll =
@@ -36,8 +38,14 @@ function App() {
   const scrollToTop = () => {
     topRef.current.scrollIntoView({ block: "end", behavior: "smooth" });
   };
-  const scrollToMid = () => {
-    midRef.current.scrollIntoView({ block: "start", behavior: "smooth" });
+  const scrollToProjects = () => {
+    projectsRef.current.scrollIntoView({ block: "start", behavior: "smooth" });
+  };
+  const scrollToTestimonials = () => {
+    testimonialsRef.current.scrollIntoView({
+      block: "start",
+      behavior: "smooth",
+    });
   };
 
   return (
@@ -46,10 +54,17 @@ function App() {
       <Main />
       <Navigation
         scrollPosition={scrollPosition}
-        scrolls={{ scrollToBottom, scrollToMid, scrollToTop }}
+        scrolls={{
+          scrollToBottom,
+          scrollToProjects,
+          scrollToTestimonials,
+          scrollToTop,
+        }}
       />
-      <div ref={midRef} />
+      <div ref={projectsRef} />
       <Projects />
+      <div ref={testimonialsRef} />
+      <Testimonials ref={testimonialsRef} />
       <Contact />
       <div ref={bottomRef} />
       {scrollPosition && <ScrollUp scrollToTop={scrollToTop} />}
