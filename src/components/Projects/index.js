@@ -1,9 +1,10 @@
 import styles from "./styles.module.css";
-import trafficAnalysisImage from "./TA.png";
-import counterDisinformationImage from "./CD.png";
-import bBotImage from "./BB.jpeg";
-import mentionAnalyticsImage from "./MA.png";
+import trafficAnalysisImage from "./assets/TA.png";
+import counterDisinformationImage from "./assets/CD.png";
+import bBotImage from "./assets/BB.jpeg";
+import mentionAnalyticsImage from "./assets/MA.png";
 import { forwardRef } from "react";
+import Project from "./project";
 
 const projects = [
   {
@@ -52,28 +53,14 @@ const Projects = forwardRef((props, ref) => {
       <hr />
       <div className={styles.projectsContainer}>
         {projects.map((project, index) => (
-          <div
+          <Project
             key={index}
-            className={`${styles.projectItem} ${
-              index % 2 === 0 && styles.projectItemOdd
-            }`}
-          >
-            <div className={styles.imgDiv}>
-              <img src={project.image} alt="project" />
-              <div className={styles.imgBackground}>
-                <button>DEMO</button>
-              </div>
-            </div>
-            <div className={styles.infoDiv}>
-              <h5>{project.name}</h5>
-              <p>{project.description}</p>
-              <ul>
-                {project.technologies.map((technology, index) => (
-                  <li key={index}>{technology}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
+            index={index}
+            image={project.image}
+            name={project.name}
+            description={project.description}
+            technologies={project.technologies}
+          />
         ))}
       </div>
     </div>

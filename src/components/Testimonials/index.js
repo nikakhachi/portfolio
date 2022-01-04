@@ -1,8 +1,9 @@
 import styles from "./styles.module.css";
-import image from "./profile.jpeg";
-import image2 from "./profile2.jpg";
-import image3 from "./profile3.jpeg";
+import image from "./assets/profile.jpeg";
+import image2 from "./assets/profile2.jpg";
+import image3 from "./assets/profile3.jpeg";
 import { forwardRef } from "react";
+import Testimonial from "./testimonial";
 
 const testimonials = [
   {
@@ -41,29 +42,15 @@ const Testimonials = forwardRef((props, ref) => {
       <hr />
       <div className={styles.testimonialsContainer}>
         {testimonials.map((testimonial, index) => (
-          <div key={index} className={styles.testimonial}>
-            <div className={styles.authorDiv}>
-              <div className={styles.imgDiv}>
-                <img src={testimonial.photo} alt="author" />
-              </div>
-              <div className={styles.authorInfo}>
-                <p className={styles.authorName}>{testimonial.author}</p>
-                <p className={styles.authorCompany}>
-                  <a
-                    href={testimonial.companyUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    {testimonial.company}
-                  </a>
-                </p>
-                <p className={styles.authorPosition}>{testimonial.position}</p>
-              </div>
-            </div>
-            <div className={styles.testimonialInfo}>
-              <p>{testimonial.testimonial}</p>
-            </div>
-          </div>
+          <Testimonial
+            key={index}
+            author={testimonial.author}
+            company={testimonial.company}
+            companyUrl={testimonial.companyUrl}
+            photo={testimonial.photo}
+            testimonial={testimonial.testimonial}
+            position={testimonial.position}
+          />
         ))}
       </div>
     </div>
