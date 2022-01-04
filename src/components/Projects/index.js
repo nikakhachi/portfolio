@@ -3,6 +3,7 @@ import trafficAnalysisImage from "./TA.png";
 import counterDisinformationImage from "./CD.png";
 import bBotImage from "./BB.jpeg";
 import mentionAnalyticsImage from "./MA.png";
+import { forwardRef } from "react";
 
 const projects = [
   {
@@ -44,9 +45,9 @@ const projects = [
   },
 ];
 
-const Projects = () => {
+const Projects = forwardRef((props, ref) => {
   return (
-    <div className={styles.container}>
+    <div ref={ref} className={styles.container}>
       <h3 className={styles.title}>Projects</h3>
       <hr />
       <div className={styles.projectsContainer}>
@@ -77,6 +78,6 @@ const Projects = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Projects;

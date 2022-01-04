@@ -4,11 +4,11 @@ import ScrollUp from "../ScrollUp";
 const Navigation = ({ scrolls, scrollPosition }) => {
   return (
     <div className={styles.arrowDown}>
-      {scrollPosition > 0.1 && <ScrollUp scrollToTop={scrolls.scrollToTop} />}
+      {scrollPosition > 0.1 && <ScrollUp scrollToTop={scrolls.scrollToAbout} />}
       <ul className={styles.list}>
         <li
           className={scrollPosition <= 0.16 && styles.activeItem}
-          onClick={scrolls.scrollToTop}
+          onClick={scrolls.scrollToAbout}
         >
           About
         </li>
@@ -30,7 +30,7 @@ const Navigation = ({ scrolls, scrollPosition }) => {
         </li>
         <li
           className={scrollPosition >= 0.84 && styles.activeItem}
-          onClick={scrolls.scrollToBottom}
+          onClick={scrolls.scrollToContact}
         >
           Contact
         </li>

@@ -2,6 +2,7 @@ import styles from "./styles.module.css";
 import image from "./profile.jpeg";
 import image2 from "./profile2.jpg";
 import image3 from "./profile3.jpeg";
+import { forwardRef } from "react";
 
 const testimonials = [
   {
@@ -33,14 +34,14 @@ const testimonials = [
   },
 ];
 
-const Testimonials = () => {
+const Testimonials = forwardRef((props, ref) => {
   return (
-    <div className={styles.container}>
+    <div ref={ref} className={styles.container}>
       <h3 className={styles.title}>Testimonials</h3>
       <hr />
       <div className={styles.testimonialsContainer}>
-        {testimonials.map((testimonial) => (
-          <div className={styles.testimonial}>
+        {testimonials.map((testimonial, index) => (
+          <div key={index} className={styles.testimonial}>
             <div className={styles.authorDiv}>
               <div className={styles.imgDiv}>
                 <img src={testimonial.photo} alt="author" />
@@ -67,6 +68,6 @@ const Testimonials = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Testimonials;

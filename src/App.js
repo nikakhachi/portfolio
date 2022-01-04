@@ -8,8 +8,8 @@ import Contact from "./components/Contact";
 function App() {
   const [scrollPosition, setScrollPosition] = useState(0);
 
-  const topRef = useRef(null);
-  const bottomRef = useRef(null);
+  const aboutRef = useRef(null);
+  const contactRef = useRef(null);
   const projectsRef = useRef(null);
   const testimonialsRef = useRef(null);
 
@@ -31,11 +31,11 @@ function App() {
     return () => window.removeEventListener("scroll", listenToScroll);
   }, []);
 
-  const scrollToBottom = () => {
-    bottomRef.current.scrollIntoView({ block: "end", behavior: "smooth" });
+  const scrollToContact = () => {
+    contactRef.current.scrollIntoView({ block: "end", behavior: "smooth" });
   };
-  const scrollToTop = () => {
-    topRef.current.scrollIntoView({ block: "end", behavior: "smooth" });
+  const scrollToAbout = () => {
+    aboutRef.current.scrollIntoView({ block: "end", behavior: "smooth" });
   };
   const scrollToProjects = () => {
     projectsRef.current.scrollIntoView({ block: "start", behavior: "smooth" });
@@ -49,23 +49,19 @@ function App() {
 
   return (
     <>
-      <div ref={topRef} />
-      <Main />
+      <Main ref={aboutRef} />
       <Navigation
         scrollPosition={scrollPosition}
         scrolls={{
-          scrollToBottom,
+          scrollToContact,
           scrollToProjects,
           scrollToTestimonials,
-          scrollToTop,
+          scrollToAbout,
         }}
       />
-      <div ref={projectsRef} />
-      <Projects />
-      <div ref={testimonialsRef} />
+      <Projects ref={projectsRef} />
       <Testimonials ref={testimonialsRef} />
-      <Contact />
-      <div ref={bottomRef} />
+      <Contact ref={contactRef} />
     </>
   );
 }

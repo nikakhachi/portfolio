@@ -1,9 +1,10 @@
 import styles from "./styles.module.css";
 import SocialList from "../socialLinks/index";
+import { forwardRef } from "react";
 
-const Contact = () => {
+const Contact = forwardRef((props, ref) => {
   return (
-    <div className={styles.container}>
+    <div ref={ref} className={styles.container}>
       <h3 className={styles.title}>Get In Touch</h3>
       <hr />
       <p className={styles.description}>
@@ -22,6 +23,6 @@ const Contact = () => {
       </footer>
     </div>
   );
-};
+});
 
 export default Contact;
