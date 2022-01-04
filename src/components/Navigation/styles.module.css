@@ -6,12 +6,13 @@
   justify-content: center;
   align-items: center;
   font-size: 1.3rem;
-  background-color: rgb(43, 43, 43);
+  background-color: #082739;
   height: 10vh;
   cursor: pointer;
   transition: 0.2s;
   position: sticky;
   top: 0;
+  width: 100%;
   z-index: 100;
 }
 

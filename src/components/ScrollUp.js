@@ -7,11 +7,12 @@ const ScrollUp = ({ scrollToTop }) => {
         onClick={scrollToTop}
         style={{
           position: "fixed",
-          backgroundColor: "rgba(255, 255, 255, 0.1)",
+          backgroundColor: "#082739",
           bottom: "1%",
           right: "1%",
           color: "white",
           borderRadius: "50%",
+          border: "1px solid #25afff",
           width: 50,
           height: 50,
           display: "flex",

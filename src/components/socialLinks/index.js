@@ -7,14 +7,14 @@ import Tooltip from "@mui/material/Tooltip";
 
 const icons = [
   {
-    title: "Github",
-    component: <GitHubIcon fontSize="large" />,
-    url: "https://github.com/xnick7x",
-  },
-  {
     title: "LinkedIn",
     component: <LinkedInIcon fontSize="large" />,
     url: "https://www.linkedin.com/in/nika-khachiashvili/",
+  },
+  {
+    title: "Github",
+    component: <GitHubIcon fontSize="large" />,
+    url: "https://github.com/xnick7x",
   },
   {
     title: "Email",

@@ -67,7 +67,7 @@
   width: 7rem;
   border-radius: 0.25rem;
   padding: 0.5rem 0;
-  background-color: #25afff;
+  background-color: #082739;
   border: 1px solid #25afff;
   color: white;
   font-family: "Raleway", sans-serif;
@@ -76,7 +76,7 @@
 }
 
 .imgBackground:hover {
-  background-color: rgba(7, 38, 58, 0.7);
+  background-color: rgba(8, 39, 57, 0.4);
   transition: 0.3s;
 }
 
@@ -93,19 +93,19 @@
 
 .infoDiv h5 {
   font-size: 1.7rem;
-  text-align: left;
+  text-align: right;
 }
 
 .projectItemOdd .infoDiv h5 {
-  text-align: right;
-}
-
-.infoDiv p {
   text-align: left;
 }
 
-.projectItemOdd p {
+.infoDiv p {
   text-align: right;
+}
+
+.projectItemOdd p {
+  text-align: left;
 }
 
 .infoDiv ul {
