@@ -10,7 +10,7 @@ const Navigation = ({ scrolls, scrollPosition }) => {
           className={scrollPosition <= 0.16 && styles.activeItem}
           onClick={scrolls.scrollToTop}
         >
-          Main Page
+          About
         </li>
         <li
           className={
@@ -32,7 +32,7 @@ const Navigation = ({ scrolls, scrollPosition }) => {
           className={scrollPosition >= 0.84 && styles.activeItem}
           onClick={scrolls.scrollToBottom}
         >
-          Contact Me
+          Contact
         </li>
       </ul>
     </div>

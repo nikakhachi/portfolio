@@ -126,3 +126,40 @@
     width: 95%;
   }
 }
+
+@media (max-width: 800px) {
+  .projectsContainer {
+    width: 80%;
+  }
+  .projectItem {
+    flex-direction: column;
+  }
+  .imgDiv {
+    width: 100%;
+  }
+  .infoDiv {
+    width: 100%;
+  }
+  .infoDiv h5,
+  .projectItemOdd .infoDiv h5 {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .infoDiv p,
+  .projectItemOdd .infoDiv p {
+    text-align: left;
+    margin: 0.5rem 0 1rem 0;
+    font-size: 1.1rem;
+  }
+  .imgBackground button {
+    width: 10rem;
+    padding: 0.8rem 0;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .projectsContainer {
+    width: 95%;
+  }
+}
