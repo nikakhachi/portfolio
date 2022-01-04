@@ -1,8 +1,10 @@
 import styles from "./styles.module.css";
+import ScrollUp from "../ScrollUp";
 
 const Navigation = ({ scrolls, scrollPosition }) => {
   return (
     <div className={styles.arrowDown}>
+      {scrollPosition > 0.1 && <ScrollUp scrollToTop={scrolls.scrollToTop} />}
       <ul className={styles.list}>
         <li
           className={scrollPosition <= 0.16 && styles.activeItem}

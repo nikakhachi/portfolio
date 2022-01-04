@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import Main from "./components/Main";
 import Projects from "./components/Projects";
-import ScrollUp from "./components/ScrollUp";
 import Navigation from "./components/Navigation";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
@@ -67,7 +66,6 @@ function App() {
       <Testimonials ref={testimonialsRef} />
       <Contact />
       <div ref={bottomRef} />
-      {scrollPosition && <ScrollUp scrollToTop={scrollToTop} />}
     </>
   );
 }
