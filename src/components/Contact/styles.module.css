@@ -69,6 +69,16 @@
   bottom: 5%;
 }
 
+.errorMessage {
+  font-size: 1.2rem;
+  color: #ff6161;
+}
+
+.successMessage {
+  font-size: 1.2rem;
+  color: #61ff61;
+}
+
 @media (max-width: 1000px) {
   .description {
     width: 90%;
