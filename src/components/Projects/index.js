@@ -3,6 +3,7 @@ import trafficAnalysisImage from "./assets/TA.png";
 import counterDisinformationImage from "./assets/CD.png";
 import bBotImage from "./assets/BB.jpeg";
 import mentionAnalyticsImage from "./assets/MA.png";
+import goldenGateImage from "./assets/GG.png";
 import { forwardRef } from "react";
 import Project from "./project";
 
@@ -10,14 +11,14 @@ const projects = [
   {
     name: "Traffic Analysis",
     description:
-      "Tbilisi City Hall project. Get the car information on any Tbilisi street cam at a specific time. Their average velocities and full routes across the town with a visualization and statistics",
+      "Tbilisi City Hall project, where authorized users can get the car information on any Tbilisi street cam at a selected time. Their average velocities and full routes across the town with a visualization and statistics.",
     image: trafficAnalysisImage,
     technologies: ["ReactJS", "DeckGL", "NodeJS", "DynamoDB"],
   },
   {
     name: "Counter Disinformation",
     description:
-      "Winner project in USAIDs Counter Disinformation Program. Track and search for specific individuals, entities, their shares in companies and other information.",
+      "Winner project in USAIDs Counter Disinformation Program. Where users can track and search specific entities, individuals, their shares in companies and other public information. Getting real-time notifications on any change. All data gathered in one place.",
     image: counterDisinformationImage,
     technologies: [
       "ReactJS",
@@ -31,16 +32,16 @@ const projects = [
     ],
   },
   {
-    name: "Mention Analytics",
+    name: "Golden Gate",
     description:
-      "Tbilisi City Hall project. Get the car information on any Tbilisi street cam at a specific time. Their average velocities and full routes across the town with a visualization and statistics",
-    image: mentionAnalyticsImage,
-    technologies: ["AngularJS", "Python", "MongoDB"],
+      "Platform, where users can create legal documents, forms and contracts and print or download them",
+    image: goldenGateImage,
+    technologies: ["ReactJS", "TypeScript"],
   },
   {
     name: "B Bot",
     description:
-      "Messenger bot operating on Botkit core. Serves as a number 1 insurance bot in Georgia.",
+      "Messenger bot. Serves as a number 1 insurance bot in Georgia.",
     image: bBotImage,
     technologies: ["NodeJS", "Botkit", "PostgreSQL"],
   },

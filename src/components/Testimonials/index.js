@@ -21,8 +21,11 @@ const testimonials = [
     company: "Aidnet",
     companyUrl: "https://www.linkedin.com/company/aidnet/",
     position: "CTO",
-    testimonial:
-      "Lorem ipsued do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+    // testimonial: `We hired Nika as a React Developer to work on our company's one of the first projects.
+    //   He did really bring the value which helped the company to gain wealth and move forwards.
+    //   Nika would be a tremendous asset to your company and has my highest recommendation.`,
+    testimonial: `As a React Developer, Nika did really bring the value which helped the company to gain wealth and move forwards. 
+    He would be a tremendous asset to your company and has my highest recommendation.`,
   },
   {
     author: "Lado Demuradze",
