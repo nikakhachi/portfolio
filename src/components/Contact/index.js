@@ -36,9 +36,28 @@ const Contact = forwardRef((props, ref) => {
       <h3 className={styles.title}>Get In Touch</h3>
       <hr />
       <p className={styles.description}>
-        Need anything built, want to work together or simply want to have a
-        chat? Drop me an e-mail at <strong>n.khachiashvili1@gmail.com</strong>{" "}
-        or simply fill out the form below and I will reply to you soon!
+        Need anything built, want to collaborate together or simply want to have
+        a chat? Drop me an e-mail at{" "}
+        <strong>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="mailto:n.khachiashvili1@gmail.com"
+          >
+            n.khachiashvili1@gmail.com
+          </a>
+        </strong>
+        , simply fill out the form below or message me directly in{" "}
+        <strong>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/nika-khachiashvili/"
+          >
+            LinkedIn
+          </a>{" "}
+        </strong>
+        and I will reply to you soon!
       </p>
       <form onSubmit={handleSubmit} className={styles.form}>
         <input
