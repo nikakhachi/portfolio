@@ -1,28 +1,49 @@
 import styles from "./styles.module.css";
+import Demo from "./demo";
+import { useState } from "react";
 
-const Project = ({ image, name, description, technologies, index }) => {
+const Project = ({
+  image,
+  name,
+  description,
+  technologies,
+  index,
+  slideshow,
+}) => {
+  const [isDemoOpen, setIsDemoOpen] = useState(false);
+
   return (
-    <div
-      className={`${styles.projectItem} ${
-        index % 2 === 0 && styles.projectItemOdd
-      }`}
-    >
-      <div className={styles.imgDiv}>
-        <img src={image} alt="project" />
-        <div className={styles.imgBackground}>
-          <button>DEMO</button>
+    <>
+      <div
+        className={`${styles.projectItem} ${
+          index % 2 === 0 && styles.projectItemOdd
+        }`}
+      >
+        <div className={styles.imgDiv}>
+          <img src={image} alt="project" />
+          <div className={styles.imgBackground}>
+            <button
+              disabled={name === "B Bot"}
+              onClick={() => setIsDemoOpen(true)}
+            >
+              {name === "B Bot" ? "No Images" : "DEMO"}
+            </button>
+            {isDemoOpen && (
+              <Demo slideshow={slideshow} close={() => setIsDemoOpen(false)} />
+            )}
+          </div>
+        </div>
+        <div className={styles.infoDiv}>
+          <h5>{name}</h5>
+          <p>{description}</p>
+          <ul>
+            {technologies.map((technology, index) => (
+              <li key={index}>{technology}</li>
+            ))}
+          </ul>
         </div>
       </div>
-      <div className={styles.infoDiv}>
-        <h5>{name}</h5>
-        <p>{description}</p>
-        <ul>
-          {technologies.map((technology, index) => (
-            <li key={index}>{technology}</li>
-          ))}
-        </ul>
-      </div>
-    </div>
+    </>
   );
 };
 
