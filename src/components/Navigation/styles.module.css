@@ -32,6 +32,7 @@
   align-items: center;
   padding: 0 2rem;
   text-align: center;
+  user-select: none;
 }
 
 .activeItem {
@@ -57,9 +58,9 @@
   .list {
     width: 100%;
     display: flex;
-    justify-content: space-between;
   }
   .list li {
     padding: 0.3rem;
+    width: 25%;
   }
 }
