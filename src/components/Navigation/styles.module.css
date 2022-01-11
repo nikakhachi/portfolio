@@ -49,18 +49,18 @@
   .arrowDown {
     font-size: 1.2rem;
   }
-  .list li {
-    padding: 1rem;
-  }
-}
-
-@media (max-width: 430px) {
   .list {
     width: 100%;
     display: flex;
   }
   .list li {
-    padding: 0.3rem;
+    padding: 1rem;
     width: 25%;
+  }
+}
+
+@media (max-width: 430px) {
+  .list li {
+    padding: 0.3rem;
   }
 }
