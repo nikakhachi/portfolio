@@ -17,15 +17,15 @@
   left: 1rem;
   background-color: #051f2e;
   border: 1px solid #25afff;
-  width: 5rem;
-  height: 5rem;
+  width: 3rem;
+  height: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 2rem;
+  border-radius: 10rem;
   cursor: pointer;
 }
 
 .closeDiv p {
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
