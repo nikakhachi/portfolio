@@ -4,6 +4,8 @@ import Projects from "./components/Projects";
 import Navigation from "./components/Navigation";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
+import { transitions, positions, Provider as AlertProvider } from "react-alert";
+import AlertTemplate from "react-alert-template-basic";
 
 function App() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -47,8 +49,20 @@ function App() {
     });
   };
 
+  const options = {
+    // you can also just use 'bottom center'
+    position: positions.BOTTOM_LEFT,
+    timeout: 5000,
+    offset: "10px",
+    containerStyle: {
+      fontSize: "0.9rem",
+    },
+    // you can also just use 'scale'
+    transition: transitions.FADE,
+  };
+
   return (
-    <>
+    <AlertProvider template={AlertTemplate} {...options}>
       <Main ref={aboutRef} />
       <Navigation
         scrollPosition={scrollPosition}
@@ -62,7 +76,7 @@ function App() {
       <Projects ref={projectsRef} />
       <Testimonials ref={testimonialsRef} />
       <Contact ref={contactRef} />
-    </>
+    </AlertProvider>
   );
 }
 
