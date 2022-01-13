@@ -56,6 +56,7 @@ function App() {
     offset: "10px",
     containerStyle: {
       fontSize: "0.9rem",
+      zIndex: 100000,
     },
     // you can also just use 'scale'
     transition: transitions.FADE,
