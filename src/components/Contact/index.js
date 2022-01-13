@@ -66,8 +66,8 @@ const Contact = forwardRef((props, ref) => {
       <h3 className={styles.title}>Get In Touch</h3>
       <hr />
       <p className={styles.description}>
-        Need anything built, want to collaborate together or simply want to have
-        a chat? Drop me an e-mail at{" "}
+        Need anything built, want to collaborate on project, or simply want to
+        have a chat? Drop me an e-mail at{" "}
         <strong>
           <a
             target="_blank"
