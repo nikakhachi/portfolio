@@ -4,14 +4,12 @@ import { useEffect, useState } from "react";
 
 const Demo = ({ close, slideshow }) => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  const [screenHeight, setScreenHeight] = useState(window.innerHeight);
 
   useEffect(() => {
     const body = document.querySelector("body");
     body.style.overflowY = "hidden";
     const handleResize = () => {
       setScreenWidth(window.innerWidth);
-      setScreenHeight(window.innerHeight);
     };
 
     window.addEventListener("resize", handleResize);
@@ -20,7 +18,6 @@ const Demo = ({ close, slideshow }) => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  console.log(screenWidth, screenHeight);
 
   return (
     <div className={styles.container}>
