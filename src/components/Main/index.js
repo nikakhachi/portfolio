@@ -13,16 +13,16 @@ const Main = forwardRef((props, ref) => {
       </p>
       <ul className={styles.iconList}>
         <li>
-          <DiReact />
-          <p>ReactJS</p>
+          <DiNodejsSmall />
+          <p>NodeJS</p>
         </li>
         <li>
           <SiTypescript />
           <p>Typescript</p>
         </li>
         <li>
-          <DiNodejsSmall />
-          <p>NodeJS</p>
+          <DiReact />
+          <p>ReactJS</p>
         </li>
       </ul>
       <hr />
