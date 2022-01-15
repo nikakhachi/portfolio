@@ -7,14 +7,16 @@ const Navigation = ({ scrolls, scrollPosition }) => {
       {scrollPosition > 0.1 && <ScrollUp scrollToTop={scrolls.scrollToAbout} />}
       <ul className={styles.list}>
         <li
-          className={scrollPosition <= 0.16 && styles.activeItem}
+          className={scrollPosition <= 0.16 ? styles.activeItem : "nonActive"}
           onClick={scrolls.scrollToAbout}
         >
           About
         </li>
         <li
           className={
-            scrollPosition < 0.62 && scrollPosition > 0.16 && styles.activeItem
+            scrollPosition < 0.62 && scrollPosition > 0.16
+              ? styles.activeItem
+              : "nonActive"
           }
           onClick={scrolls.scrollToProjects}
         >
@@ -22,14 +24,16 @@ const Navigation = ({ scrolls, scrollPosition }) => {
         </li>
         <li
           className={
-            scrollPosition < 0.84 && scrollPosition > 0.62 && styles.activeItem
+            scrollPosition < 0.84 && scrollPosition > 0.62
+              ? styles.activeItem
+              : "nonActive"
           }
           onClick={scrolls.scrollToTestimonials}
         >
           Testimonials
         </li>
         <li
-          className={scrollPosition >= 0.84 && styles.activeItem}
+          className={scrollPosition >= 0.84 ? styles.activeItem : "nonActive"}
           onClick={scrolls.scrollToContact}
         >
           Contact
