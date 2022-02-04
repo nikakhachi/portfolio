@@ -23,8 +23,6 @@ const Contact = forwardRef((props, ref) => {
         and I will reply to you soon!
       </p>
       <SocialList />
-
-      <footer className={styles.footer}></footer>
     </div>
   );
 });
