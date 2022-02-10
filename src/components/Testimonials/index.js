@@ -1,7 +1,7 @@
 import styles from "./styles.module.css";
 import { forwardRef } from "react";
 import Testimonial from "./testimonial";
-import testimonials from "../../data/testimonials.json";
+import testimonials from "../../data/testimonials";
 
 const Testimonials = forwardRef((props, ref) => {
   return (
