@@ -2,35 +2,19 @@ import styles from "./styles.module.css";
 import Demo from "./demo";
 import { useState } from "react";
 
-const Project = ({
-  image,
-  name,
-  description,
-  technologies,
-  index,
-  slideshow,
-}) => {
+const Project = ({ image, name, description, technologies, index, slideshow }) => {
   const [isDemoOpen, setIsDemoOpen] = useState(false);
 
   return (
     <>
-      <div
-        className={`${styles.projectItem} ${
-          index % 2 === 0 && styles.projectItemOdd
-        }`}
-      >
+      <div className={`${styles.projectItem} ${index % 2 === 0 && styles.projectItemOdd}`}>
         <div className={styles.imgDiv}>
           <img src={image} alt="project" />
           <div className={styles.imgBackground}>
-            <button
-              disabled={name === "B Bot"}
-              onClick={() => setIsDemoOpen(true)}
-            >
-              {name === "B Bot" ? "No Images" : "DEMO"}
+            <button disabled={name === "B Bot"} onClick={() => setIsDemoOpen(true)}>
+              {slideshow.length === 1 ? "No Images" : "DEMO"}
             </button>
-            {isDemoOpen && (
-              <Demo slideshow={slideshow} close={() => setIsDemoOpen(false)} />
-            )}
+            {isDemoOpen && <Demo slideshow={slideshow} close={() => setIsDemoOpen(false)} />}
           </div>
         </div>
         <div className={styles.infoDiv}>

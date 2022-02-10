@@ -1,13 +1,6 @@
 import styles from "./style.module.css";
 
-const Testimonial = ({
-  photo,
-  author,
-  companyUrl,
-  company,
-  position,
-  testimonial,
-}) => {
+const Testimonial = ({ photo, author, companyUrl, company, position, testimonial }) => {
   return (
     <div className={styles.testimonial}>
       <div className={styles.authorDiv}>
