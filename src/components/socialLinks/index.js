@@ -14,7 +14,7 @@ const icons = [
   {
     title: "Github",
     component: <GitHubIcon fontSize="large" />,
-    url: "https://github.com/xnick7x",
+    url: "https://github.com/nikakhachi",
   },
   {
     title: "Email",
