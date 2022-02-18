@@ -1,4 +1,5 @@
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import styles from "./styles.module.css";
 
 const ScrollUp = ({ scrollToTop }) => {
   return (
@@ -21,6 +22,7 @@ const ScrollUp = ({ scrollToTop }) => {
           fontSize: "2rem",
           cursor: "pointer",
         }}
+        className={styles.scrollUp}
       >
         <KeyboardArrowUpIcon fontSize="inherit" />
       </p>
