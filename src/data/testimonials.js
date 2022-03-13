@@ -13,7 +13,7 @@ const testimonials = [
     photo: "assets/testimonials/profile2.jpg",
     company: "Aidnet",
     companyUrl: "https://www.linkedin.com/company/aidnet/",
-    position: "CTO",
+    position: "Co-Founder, CIO",
     testimonial:
       "As a React Developer, Nika did really bring the value which helped the company to gain wealth and move forwards. He would be a tremendous asset to your company and has my highest recommendation.",
   },
