@@ -8,9 +8,7 @@ const Main = forwardRef((props, ref) => {
   return (
     <div ref={ref} className={styles.container}>
       <h1 className={styles.name}>Nika Khachiashvili</h1>
-      <p className={styles.description}>
-        Experienced Full Stack Software Engineer, specializing in :
-      </p>
+      <p className={styles.description}>AWS Certified Full Stack Software Engineer, specializing in :</p>
       <ul className={styles.iconList}>
         <li>
           <DiNodejsSmall />
