@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+:root {
+  --dark-blue: #082739;
+  --glowing-blue: #25afff;
+}
+
 body::before {
   content: "";
   position: fixed;
@@ -13,8 +18,7 @@ body::before {
   width: 100%;
   z-index: -1;
   background: var(--color-darkblue);
-  background-image: linear-gradient(115deg, #000020b7, #101012de),
-    url("assets/background.png");
+  background-image: linear-gradient(115deg, #000020b7, #101012de), url("assets/background.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

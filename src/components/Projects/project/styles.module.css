@@ -40,8 +40,8 @@
   width: 7rem;
   border-radius: 0.25rem;
   padding: 0.5rem 0;
-  background-color: #082739;
-  border: 1px solid #25afff;
+  background-color: var(--dark-blue);
+  border: 1px solid var(--glowing-blue);
   color: white;
   font-family: "Raleway", sans-serif;
   font-weight: 900;
