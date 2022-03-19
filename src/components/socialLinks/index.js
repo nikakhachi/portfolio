@@ -4,7 +4,6 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
 import Tooltip from "@mui/material/Tooltip";
-import { GrDocumentPdf } from "react-icons/gr";
 
 const icons = [
   {
