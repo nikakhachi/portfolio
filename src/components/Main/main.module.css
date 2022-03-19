@@ -26,7 +26,7 @@
   font-size: 1.15rem;
   line-height: 1.675;
   font-weight: 100;
-  margin: 1rem 0 0.5rem 0;
+  margin: 1rem 0 1.5rem 0;
   animation: fadeIn2 1.2s ease;
 }
 
@@ -52,6 +52,7 @@ hr {
 }
 
 .iconList li p {
+  margin-top: 0.5rem;
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.8);
 }
