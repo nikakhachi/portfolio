@@ -9,7 +9,7 @@
   --glowing-blue: #25afff;
 }
 
-body::before {
+/* body::before {
   content: "";
   position: fixed;
   top: 0;
@@ -22,10 +22,11 @@ body::before {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
 
 body {
   font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
 }
 
 li {
