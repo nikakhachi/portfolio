@@ -4,7 +4,7 @@ import Projects from "./components/Projects";
 import Navigation from "./components/Navigation";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
-import { useTransition, animated } from "react-spring";
+import { useTransition } from "react-spring";
 import LoadingScreen from "./components/LoadingScreen";
 
 function App() {
