@@ -1,14 +1,18 @@
 import styles from "./style.module.css";
 
-const Testimonial = ({ photo, author, companyUrl, company, position, testimonial }) => {
+const Testimonial = ({ photo, author, authorUrl, companyUrl, company, position, testimonial }) => {
   return (
     <div className={styles.testimonial}>
       <div className={styles.authorDiv}>
         <div className={styles.imgDiv}>
-          <img src={photo} alt="author" />
+          <a href={authorUrl} target="_blank" rel="noreferrer">
+            <img src={photo} alt="author" />
+          </a>
         </div>
         <div className={styles.authorInfo}>
-          <p className={styles.authorName}>{author}</p>
+          <a href={authorUrl} target="_blank" rel="noreferrer" className={styles.authorName}>
+            {author}
+          </a>
           <p className={styles.authorCompany}>
             <a href={companyUrl} target="_blank" rel="noreferrer">
               {company}

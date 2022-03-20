@@ -10,6 +10,7 @@ const testimonials = [
   // },
   {
     author: "Lado Demuradze",
+    authorUrl: "https://www.linkedin.com/in/lado-demuradze-5755851b3/",
     photo: "assets/testimonials/profile3.jpeg",
     company: "Pulsar AI Georgia",
     companyUrl: "https://www.linkedin.com/company/pulsar-ai-georgia/",
@@ -21,6 +22,7 @@ const testimonials = [
   },
   {
     author: "David Maghradze",
+    authorUrl: "https://www.linkedin.com/in/david-maghradze",
     photo: "assets/testimonials/profile2.jpg",
     company: "Aidnet",
     companyUrl: "https://www.linkedin.com/company/aidnet/",

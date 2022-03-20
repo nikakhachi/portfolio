@@ -29,6 +29,8 @@
 .authorName {
   font-size: 1.3rem;
   font-weight: 900;
+  color: white;
+  text-decoration: none;
 }
 
 .authorCompany {

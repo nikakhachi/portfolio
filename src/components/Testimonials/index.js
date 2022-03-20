@@ -13,6 +13,7 @@ const Testimonials = forwardRef((props, ref) => {
           <Testimonial
             key={index}
             author={testimonial.author}
+            authorUrl={testimonial.authorUrl}
             company={testimonial.company}
             companyUrl={testimonial.companyUrl}
             photo={window.location.href + testimonial.photo}
