@@ -1,13 +1,16 @@
 const testimonials = [
-  // {
-  //   author: "Ketevan Bosikashvili",
-  //   photo: "assets/testimonials/profile.jpeg",
-  //   company: "Pulsar AI",
-  //   companyUrl: "https://www.linkedin.com/company/pulsar-ai-georgia/",
-  //   position: "Executive Director",
-  //   testimonial:
-  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-  // },
+  {
+    author: "Ketevan Bosikashvili",
+    authorUrl: "https://www.linkedin.com/in/ketevan-bosikashvili-b8772776/",
+    photo: "assets/testimonials/profile.jpeg",
+    company: "Supernova",
+    companyUrl: "https://en.supernova.ge/",
+    position: "Executive Director",
+    testimonial: `... I have been consistently impressed with his attitude and productivity during that time.
+      Nika is both very bright and quite motivated. 
+      I am confident that he will devote himself to the new job with a high degree of diligence. 
+      He is a quick learner and has shown the ability to achieve high performance and goals.`,
+  },
   {
     author: "Lado Demuradze",
     authorUrl: "https://www.linkedin.com/in/lado-demuradze-5755851b3/",
