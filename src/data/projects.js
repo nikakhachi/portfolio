@@ -8,6 +8,14 @@ const projects = [
     technologies: ["ReactJS", "DeckGL", "NodeJS", "DynamoDB"],
   },
   {
+    name: "Chakrulo",
+    description:
+      "Chakrulo is a unique platform for musicians and other audio enthusiasts, who are passionate about exploring different ways of experiencing Sound. Chakrulo transforms any audio into visual art form, to a conceptual shape, nature inspired, reminding you an Eye. It generates a unique pattern of colors just like an eye has. Here begins a digital transformation, where everyone can express and discover themselves.",
+    image: "assets/projects/ta/TA.jpg",
+    slideshow: ["assets/projects/ta/TA.jpg", "assets/projects/ta/TA2.jpg", "assets/projects/ta/TA3.jpg"],
+    technologies: ["ReactJS", "ThreeJS", "NodeJS"],
+  },
+  {
     name: "Counter Disinformation",
     description:
       "Winner project in USAIDs Counter Disinformation Program. Where users can track and search specific entities, individuals, their shares in companies and other public information. Getting real-time notifications on any change. All data gathered in one place.",
