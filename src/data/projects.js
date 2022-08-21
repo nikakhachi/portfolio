@@ -11,8 +11,14 @@ const projects = [
     name: "Chakrulo",
     description:
       "Chakrulo is a unique platform for musicians and other audio enthusiasts, who are passionate about exploring different ways of experiencing Sound. Chakrulo transforms any audio into visual art form, to a conceptual shape, nature inspired, reminding you an Eye. It generates a unique pattern of colors just like an eye has. Here begins a digital transformation, where everyone can express and discover themselves.",
-    image: "assets/projects/ta/TA.jpg",
-    slideshow: ["assets/projects/ta/TA.jpg", "assets/projects/ta/TA2.jpg", "assets/projects/ta/TA3.jpg"],
+    image: "assets/projects/ch/1.png",
+    slideshow: [
+      "assets/projects/ch/1.png",
+      "assets/projects/ch/2.png",
+      "assets/projects/ch/3.png",
+      "assets/projects/ch/4.png",
+      "assets/projects/ch/5.png",
+    ],
     technologies: ["ReactJS", "ThreeJS", "NodeJS"],
   },
   {
@@ -29,6 +35,14 @@ const projects = [
     ],
 
     technologies: ["ReactJS", "Force-Graph", "NodeJS", "SocketIO", "Neo4j", "PostgreSQL", "S3", "SQS"],
+  },
+  {
+    name: "Mention Analytics",
+    description:
+      "Mention Analytics enables brands and agencies to monitor the web and social medias to listen to the posts or articles related to their needs (keywords, events, etc.). The data update on the platform happens real-time, clients are notified whenever web or/and social media have new mentions of the client requiremenets.",
+    image: "assets/projects/mm/1.png",
+    slideshow: ["assets/projects/mm/1.png", "assets/projects/mm/2.png", "assets/projects/mm/3.png", "assets/projects/mm/4.png"],
+    technologies: ["AngularJS", "Python", "Scrapy", "MongoDB"],
   },
   {
     name: "Golden Gate",
