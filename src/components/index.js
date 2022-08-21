@@ -80,7 +80,7 @@ function MainView() {
           scrollToAbout,
         }}
       />
-      <Projects ref={projectsRef} />
+      <Projects scrollToStart={scrollToProjects} ref={projectsRef} />
       <Testimonials ref={testimonialsRef} />
       <Contact ref={contactRef} />
     </>

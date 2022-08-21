@@ -15,6 +15,11 @@
   margin-bottom: 1rem;
 }
 
+.title span {
+  font-size: 1.1rem;
+  letter-spacing: 0rem;
+}
+
 .projectsContainer {
   margin-top: 5rem;
   display: flex;
@@ -23,6 +28,24 @@
   align-items: center;
   gap: 4rem;
   width: 60rem;
+  margin-bottom: 4rem;
+}
+
+.moreBtn {
+  animation: fadeIn 0.3s ease;
+  background-color: var(--dark-blue);
+  color: white;
+  border: 1px solid var(--glowing-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 @media (max-width: 1150px) {
