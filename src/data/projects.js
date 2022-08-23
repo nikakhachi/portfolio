@@ -3,7 +3,7 @@ const projects = [
     name: "Salescoach",
     client: "Insurance Company",
     description:
-      "Platform is designed for quickly onboarding and teaching new sales persons how to sell by displaying them different topics of sales in pre recorded format that is read by an avatar. Trainees can submit their own recordings on the topic. Afterwards the mentor can let them pass or decline them and give them notes about what to improve in the future. Learning materials are controlled from an admin panel.",
+      "Designed for quick onboarding and teaching new salespersons how to sell by displaying them different topics of sales in a pre-recorded format that is read by an avatar. Trainees can submit their recordings and argumentations on the topic. Afterward, the mentor can let them pass or decline them and give them a feedback. The topics are controlled and updated from an admin panel.",
     image: "assets/projects/sc/1.png",
     slideshow: [
       "assets/projects/sc/1.png",
@@ -21,7 +21,7 @@ const projects = [
     name: "Chakrulo",
     client: "Startup",
     description:
-      "Chakrulo is a unique platform for musicians and other audio enthusiasts, who are passionate about exploring different ways of experiencing Sound. Chakrulo transforms any audio into visual art form, to a conceptual shape, nature inspired, reminding you an Eye. It generates a unique pattern of colors just like an eye has. Here begins a digital transformation, where everyone can express and discover themselves.",
+      "A Unique platform for musicians and other audio enthusiasts, who are passionate about exploring different ways of experiencing sound. Chakrulo transforms any audio into a visual art form, to a conceptual shape, nature-inspired, reminding you of an Eye. It generates a unique pattern of colors just like an eye has. Here begins a digital transformation, where everyone can express and discover themselves.",
     image: "assets/projects/ch/1.png",
     slideshow: [
       "assets/projects/ch/1.png",
@@ -36,7 +36,7 @@ const projects = [
     name: "Traffic Analysis",
     client: "City Hall",
     description:
-      "Tbilisi City Hall project, where authorized users can get the car information on any Tbilisi street cam at a selected time. Their average velocities and full routes across the town with a visualization and statistics.",
+      "App where authorized users can get the car information on any Tbilisi street camera at a selected time. Their average velocities and full routes across the town with visualization and statistics.",
     image: "assets/projects/ta/TA.jpg",
     slideshow: ["assets/projects/ta/TA.jpg", "assets/projects/ta/TA2.jpg", "assets/projects/ta/TA3.jpg"],
     technologies: ["ReactJS", "DeckGL", "NodeJS", "DynamoDB"],
@@ -45,7 +45,7 @@ const projects = [
     name: "Counter Disinformation",
     client: "USAID",
     description:
-      "Winner project in USAIDs Counter Disinformation Program. Where users can track and search specific entities, individuals, their shares in companies and other public information. Getting real-time notifications on any change. All data gathered in one place.",
+      "Platform where users can track and search specific entities, individuals, their shares in companies and other public information. Getting real-time notifications on any change. All data gathered in one place.",
     image: "assets/projects/cd/CD.jpg",
     slideshow: [
       "assets/projects/cd/CD.jpg",
@@ -61,7 +61,7 @@ const projects = [
     name: "Mention Analytics",
     client: "Independent Agency",
     description:
-      "Mention Analytics enables brands and agencies to monitor the web and social medias to listen to the posts or articles related to their needs (keywords, events, etc.). The data update on the platform happens real-time, clients are notified whenever web or/and social media have new mentions of the client requiremenets.",
+      "The platform enables brands and agencies to monitor the web and social media to listen to the posts or articles related to their needs (keywords, events, etc.). The data update on the platform happens in real-time, and clients are notified whenever web or/and social media have new mentions of the client's requiremenets.",
     image: "assets/projects/mm/1.png",
     slideshow: ["assets/projects/mm/1.png", "assets/projects/mm/2.png", "assets/projects/mm/3.png", "assets/projects/mm/4.png"],
     technologies: ["AngularJS", "Python", "Scrapy", "MongoDB"],
@@ -69,7 +69,7 @@ const projects = [
   {
     name: "Golden Gate",
     client: "Law Firm",
-    description: "Platform, where users can create legal documents, forms and contracts and print or download them",
+    description: "The platform, where users can create legal documents, forms and contracts and print or download them",
     image: "assets/projects/goldenGate/GG.png",
     slideshow: [
       "assets/projects/goldenGate/GG.png",
