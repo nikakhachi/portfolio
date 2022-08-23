@@ -2,7 +2,7 @@ import styles from "./styles.module.css";
 import Demo from "./demo";
 import { useState } from "react";
 
-const Project = ({ image, name, description, technologies, index, slideshow }) => {
+const Project = ({ image, name, description, technologies, index, slideshow, client }) => {
   const [isDemoOpen, setIsDemoOpen] = useState(false);
 
   return (
@@ -18,7 +18,9 @@ const Project = ({ image, name, description, technologies, index, slideshow }) =
           </div>
         </div>
         <div className={styles.infoDiv}>
-          <h5>{name}</h5>
+          <h5>
+            {name} <span>({client})</span>
+          </h5>
           <p>{description}</p>
           <ul>
             {technologies.map((technology, index) => (

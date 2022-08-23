@@ -69,6 +69,10 @@
   text-align: right;
 }
 
+.infoDiv h5 span {
+  font-size: 0.9rem;
+}
+
 .projectItemOdd .infoDiv h5 {
   text-align: left;
 }
