@@ -1,11 +1,20 @@
 const projects = [
   {
-    name: "Traffic Analysis",
+    name: "Salescoach",
     description:
-      "Tbilisi City Hall project, where authorized users can get the car information on any Tbilisi street cam at a selected time. Their average velocities and full routes across the town with a visualization and statistics.",
-    image: "assets/projects/ta/TA.jpg",
-    slideshow: ["assets/projects/ta/TA.jpg", "assets/projects/ta/TA2.jpg", "assets/projects/ta/TA3.jpg"],
-    technologies: ["ReactJS", "DeckGL", "NodeJS", "DynamoDB"],
+      "Platform is designed for quickly onboarding and teaching new sales persons how to sell by displaying them different topics of sales in pre recorded format that is read by an avatar. Trainees can submit their own recordings on the topic. Afterwards the mentor can let them pass or decline them and give them notes about what to improve in the future. Learning materials are controlled from an admin panel.",
+    image: "assets/projects/sc/1.png",
+    slideshow: [
+      "assets/projects/sc/1.png",
+      "assets/projects/sc/2.png",
+      "assets/projects/sc/3.png",
+      "assets/projects/sc/4.png",
+      "assets/projects/sc/5.png",
+      "assets/projects/sc/6.png",
+      "assets/projects/sc/7.png",
+      "assets/projects/sc/8.png",
+    ],
+    technologies: ["ReactJS", "ThreeJS", "NodeJS", "PostgreSQL"],
   },
   {
     name: "Chakrulo",
@@ -20,6 +29,14 @@ const projects = [
       "assets/projects/ch/5.png",
     ],
     technologies: ["ReactJS", "ThreeJS", "NodeJS"],
+  },
+  {
+    name: "Traffic Analysis",
+    description:
+      "Tbilisi City Hall project, where authorized users can get the car information on any Tbilisi street cam at a selected time. Their average velocities and full routes across the town with a visualization and statistics.",
+    image: "assets/projects/ta/TA.jpg",
+    slideshow: ["assets/projects/ta/TA.jpg", "assets/projects/ta/TA2.jpg", "assets/projects/ta/TA3.jpg"],
+    technologies: ["ReactJS", "DeckGL", "NodeJS", "DynamoDB"],
   },
   {
     name: "Counter Disinformation",
